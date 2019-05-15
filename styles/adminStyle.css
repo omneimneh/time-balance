@@ -1,0 +1,53 @@
+.event {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    margin: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    border: solid 1px #26262650;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.event:hover {
+    background-color: #4B4B7E50;
+    transition: all 0.5s;
+}
+
+.event:active {
+    background-color: #4B4B7E80;
+}
+
+.event>div>img {
+    margin: 10px;
+}
+
+button, input[type="submit"] {
+    margin: 12px;
+    text-align: center;
+    align-self: flex-end;
+    border-radius: 2px;
+    border-width: 0px;
+    min-width: 100px;
+    font-size: 12pt;
+    color: white;
+    background-color: #292961;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fav {
+    align-self: center;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #5454aa;
+}
+
+button:active, input[type="submit"]:active {
+    background-color: rgb(134, 114, 189);
+}

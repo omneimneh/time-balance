@@ -1,0 +1,113 @@
+body {
+  opacity: 0.6;
+  background: linear-gradient(to bottom, #afe0f6, #b0b8eb);
+}
+
+.bgDiv {
+  background: url("../images/ic_grass.png");
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position-y: 500px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.sun {
+  position: fixed;
+  right: -150px;
+  top: 500px;
+  z-index: -2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 900px;
+}
+
+.eventImage {
+  margin: 24px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: solid 5px #e3f2fd;
+}
+
+.eventTitle {
+  font-size: 26pt;
+  margin: 8px;
+}
+
+.eventDescription {
+  padding: 8px;
+  width: 700px;
+  max-height: 300px;
+  overflow: auto;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+.inviteWindow button, .pressActivity {
+  margin: 12px;
+  text-align: center;
+  border-radius: 2px;
+  color: white;
+  background-color: #292961;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 6px;
+  outline: none;
+  font-size: 12pt;
+}
+
+.inviteWindow button:hover, .pressActivity:hover {
+  background-color: #5454aa;
+}
+
+.inviteWindow button:active, .pressActivity:active {
+  background-color: rgb(134, 114, 189);
+}
+
+.inviteWindow button:disabled, .pressActivity:disabled {
+  background-color: gray;
+}
+
+.inviteWindow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1060px;
+  right: 0;
+  background-color: #000000A0;
+}
+
+.inviteWindow .window {
+  height: 130px;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 4px;
+  width: 300px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inviteWindow input[type="email"] {
+  width: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+  .eventDescription {
+    max-width: calc(100% - 50px);
+  }
+}

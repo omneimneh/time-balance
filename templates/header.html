@@ -1,0 +1,82 @@
+<header id="header" class="header">
+    <nav>
+        <img class="logo" width="30px" height="30px" id="headerTitle" src="../images/sand-clock.svg">
+        <span style="width: 40px"></span>
+        <h2 id="headerTitle">Time Balance</h2>
+        <ul>
+            <a href="../web/home.php">
+                <li>Home</li>
+            </a>
+            <a href="../web/study.php">
+                <li>Study</li>
+            </a>
+            <a href="../web/myactivities.php">
+                <li>Entertain</li>
+            </a>
+            <a href="../web/dashboard.php">
+                <li class="dashboardOption">Dashboard</li>
+            </a>
+            <a href="login.php?logout=true">
+                <li>Logout</li>
+            </a>
+            <a href="../web/login.php">
+                <li>
+                    <?php
+
+@session_start();
+include_once '../php/DB.php';
+$db = new DB();
+if (isset($_SESSION['uid'])) {
+    echo "Welcome " . $db->get_user_with_id($_SESSION['uid'])['username'];
+} else {
+    echo "Sign In/Register";
+}
+$db->disconnect();
+unset($db);
+?>
+
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="moreOption">
+        <img width="20px" height="20px" src="../images/ic_menu_dashes.png">
+    </div>
+    <ul class="mobileOptions">
+        <a href="home.php">
+            <li>Home</li>
+        </a>
+        <a href="study.php">
+            <li>Study</li>
+        </a>
+        <a href="myactivities.php">
+            <li>Entertain</li>
+        </a>
+        <a href="dashboard.php" class="dashboardOption">
+            <li class="dashboardOption">Dashboard</li>
+        </a>
+        <a href="login.php?logout=true">
+            <li>Logout</li>
+        </a>
+        <a href="login.php">
+            <li>
+                <?php
+
+@session_start();
+include_once '../php/DB.php';
+$db = new DB();
+if (isset($_SESSION['uid'])) {
+    echo "Welcome " . $db->get_user_with_id($_SESSION['uid'])['username'];
+} else {
+    echo "Sign In/Register";
+}
+$db->disconnect();
+unset($db);
+?>
+            </li>
+        </a>
+    </ul>
+</header>
+
+<div style="height: 50px;"></div>

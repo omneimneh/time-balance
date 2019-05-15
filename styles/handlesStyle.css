@@ -1,0 +1,34 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+p {
+    font-size: 14pt;
+}
+
+body {
+    width: 100%;
+    font-family: Tahoma;
+    color: white;
+    margin: 0;
+    padding-top: 64pt;
+    display: flex;
+    background-size: cover;
+    background-image: url("../images/ic_background.png");
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    padding: 8pt 16pt 8pt 16pt;
+    background-color: #1b1b1b;
+    border-radius: 4pt;
+    min-width: 50%;
+    min-height: 128pt;
+    overflow: auto;
+}

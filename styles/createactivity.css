@@ -1,0 +1,142 @@
+body {
+  opacity: 0.6;
+  background: linear-gradient(to bottom, #afe0f6, #b0b8eb);
+}
+
+.bgDiv {
+  background: url("../images/ic_grass.png");
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position-y: 500px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.sun {
+  position: fixed;
+  right: -150px;
+  top: 500px;
+  z-index: -2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 900px;
+}
+
+.eventImage {
+  cursor: pointer;
+  margin: 24px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: solid 5px #e3f2fd;
+}
+
+.eventTitle {
+  font-size: 22pt;
+  padding: 4px;
+  margin: 8px;
+  background-color: rgba(255, 255, 255, 0.75);
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+.eventDescription {
+  padding: 8px;
+  width: 700px;
+  max-height: 300px;
+  overflow: auto;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+.eventDescriptionX {
+  font-size: 15pt;
+  padding: 8px;
+  width: 700px;
+  max-height: 300px;
+  height: 300px;
+  overflow: auto;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: start;
+}
+
+.startButton {
+  text-align: center;
+  align-self: center;
+  border-radius: 2px;
+  border-width: 0px;
+  min-width: 100px;
+  padding: 10px;
+  font-size: 12pt;
+  color: white;
+  background-color: #e65328;
+  border: none;
+  text-decoration: none;
+}
+
+.startButton:hover {
+  background-color: rgb(226, 59, 9);
+}
+
+.startButton:active {
+  background-color: rgb(200, 51, 5);
+}
+
+.pressActivity {
+  margin: 12px;
+  text-align: center;
+  border-radius: 2px;
+  color: white;
+  background-color: #292961;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 6px;
+  outline: none;
+  font-size: 12pt;
+}
+
+.pressActivity:hover {
+  background-color: #5454aa;
+}
+
+.pressActivity:active {
+  background-color: rgb(134, 114, 189);
+}
+
+[type="date"] {
+  background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 720px) {
+  .eventDescription, .eventDescriptionX {
+    max-width: calc(100% - 50px);
+  }
+}

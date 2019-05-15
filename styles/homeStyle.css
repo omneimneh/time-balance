@@ -1,0 +1,373 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+html {
+    padding: 0;
+    margin: 0;
+    padding-right: 5px;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+    font-family: 'Open Sans';
+}
+
+*:focus {
+    outline: none;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+a, img {
+    cursor: pointer;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding-right: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header>h1, header>h1 {
+    font-size: 28pt;
+}
+
+.header>*, header>* {
+    max-width: 100%;
+}
+
+.header, header {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to bottom, #380D75 50px, #9477EA);
+}
+
+.header {
+    position: fixed;
+    height: 60px;
+    background: white;
+    padding: 0;
+    color: dimgray;
+    top: 0;
+    left: 0;
+    display: none;
+    border-bottom: solid gray 1px;
+    box-shadow: #26262650 4px 4px 4px;
+}
+
+.header>nav, header>nav {
+    align-self: center;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#headerTitle {
+    flex: 0;
+    margin: 10px;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.header>nav>ul, header>nav>ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+}
+
+.header>nav>ul>a, header>nav>ul>a {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+    padding: 0 40px 0px 40px;
+}
+
+.header>nav>ul, body>header>nav>ul {
+    overflow: -moz-scrollbars-none;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+}
+
+.header>nav>ul::-webkit-scrollbar, body>header>nav>ul::-webkit-scrollbar {
+    height: 0;
+    background: transparent;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.introQuote {
+    text-align: center;
+    font-weight: normal;
+}
+
+.startButton {
+    text-align: center;
+    align-self: center;
+    border-radius: 2px;
+    border-width: 0px;
+    min-width: 100px;
+    padding: 10px;
+    font-size: 12pt;
+    color: white;
+    background-color: #E65328;
+    border: none;
+    text-decoration: none;
+}
+
+.startButton:hover {
+    background-color: rgb(226, 59, 9);
+}
+
+.startButton:active {
+    background-color: rgb(200, 51, 5);
+}
+
+.tabContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tablinks h3 {
+    font-size: 16pt;
+}
+
+.tablinks {
+    color: #380D75;
+    cursor: pointer;
+    flex: 1;
+    width: 120px;
+    height: 120px;
+    font-size: 16pt;
+    padding: 10px;
+    padding-left: 5px;
+    background-image: url('../images/pointer.png');
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.3;
+}
+
+.tablinks:hover {
+    opacity: 1;
+}
+
+.tablinks>h3, .tablinks>a {
+    font-weight: normal;
+    color: dimgray;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.tabContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.tabsContentContainer {
+    flex: 2;
+}
+
+.introTabsContainer {
+    width: 900px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.blogTitle {
+    color: white;
+    background: linear-gradient(to bottom, #FA7035, #FAA337);
+    width: 100%;
+    max-width: 1200px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 100px 0px 50px 0px;
+    overflow: hidden;
+    max-width: calc(100% - 20px);
+}
+
+.blogTitle>h1 {
+    margin: 8px;
+}
+
+.blogsContainer {
+    max-width: 1200px;
+    align-self: center;
+    align-content: center;
+    display: inline-block;
+    text-align: center;
+    color: dimgray;
+    box-sizing: content-box;
+    padding: 20px;
+}
+
+.user_review {
+    background-color: white;
+    text-align: center;
+    margin: 4px;
+    height: 340px;
+    overflow: hidden;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 280px;
+}
+
+.user_review>.content {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 180px;
+}
+
+body>footer {
+    background-color: #6B4FBB;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+    color: white;
+}
+
+footer>div>a {
+    margin: 5px;
+}
+
+.authors>h4 {
+    font-weight: normal;
+    margin: 3px 0;
+}
+
+.header a:hover, header a:hover {
+    text-decoration: underline;
+}
+
+.introAnchor, .introAnchor:hover {
+    text-decoration: none;
+}
+
+.moreOption {
+    border: white solid 1px;
+    width: 40px;
+    height: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.mobileOptions {
+    display: none;
+    list-style-type: none;
+    background-color: #380D75;
+    border-top: 1px solid white;
+    text-align: center;
+    box-shadow: rgba(128, 128, 128, 0.3) 0px 4px 4px;
+    top: 60px;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 1;
+    z-index: 2;
+    padding: 0;
+}
+
+.mobileOptions a, .mobileOptions a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.moreOption:active {
+    background-color: #DDDDDD;
+}
+
+body>footer a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 720px) {
+    html {
+        padding-right: 0px;
+    }
+    html, body, .blogTitle, header, footer, .header {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .user_review {
+        width: 100%;
+    }
+    .header>nav>ul, header>nav>ul {
+        visibility: hidden;
+        white-space: nowrap;
+    }
+    .tabContainer {
+        flex-direction: row;
+    }
+    .introTabsContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tablinks {
+        background-image: url('../images/pointer_south.png');
+        background-repeat: no-repeat;
+        margin: 4px;
+    }
+    .tabcontent img {
+        margin: 40px;
+        width: 120px;
+        height: 120px;
+    }
+    .tabContainer {
+        width: 100%;
+        padding: 30px;
+        justify-content: space-evenly;
+    }
+    .moreOption {
+        display: flex;
+    }
+}

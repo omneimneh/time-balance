@@ -1,0 +1,41 @@
+.container {
+    min-height: 900px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+body {
+    background: linear-gradient(to bottom, #afe0f6, #b0b8eb);
+}
+
+.ground {
+    background: url('../images/ground.png');
+    height: 200px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: repeat-x;
+    margin-top: -100px;
+    z-index: 1;
+}
+
+.show {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.idea {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    padding: 12px;
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}

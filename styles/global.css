@@ -1,0 +1,193 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+* {
+    font-family: 'Open Sans';
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+}
+
+#headerTitle {
+    flex: 0;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+html, body, body>header, footer, .header {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+}
+
+body>footer {
+    background-color: #6B4FBB;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+}
+
+footer>div>a {
+    margin: 5px;
+}
+
+.header>h1, body>header>h1 {
+    font-size: 28pt;
+}
+
+.header>*, body>header>* {
+    max-width: 100%;
+}
+
+.header, body>header {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    background: #292961;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    z-index: 1;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    border-bottom: solid gray 1px;
+    box-shadow: #26262650 4px 4px 4px;
+}
+
+.header>nav, body>header>nav {
+    align-self: center;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header>nav>ul, body>header>nav>ul {
+    list-style-type: none;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    overflow: -moz-scrollbars-none;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+}
+
+.header>nav>ul::-webkit-scrollbar, body>header>nav>ul::-webkit-scrollbar {
+    height: 0;
+    background: transparent;
+}
+
+.header>nav>ul>a, body>header>nav>ul>a {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+    padding: 0 40px 0px 40px;
+}
+
+.header a:hover, body>header a:hover {
+    text-decoration: underline;
+}
+
+.findAcitivity {
+    overflow-y: scroll;
+    border: solid gray 1px;
+}
+
+.moreOption {
+    border: white solid 1px;
+    width: 40px;
+    height: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.mobileOptions {
+    display: none;
+    list-style-type: none;
+    background-color: #380D75;
+    border-top: 1px solid white;
+    text-align: center;
+    box-shadow: rgba(128, 128, 128, 0.3) 0px 4px 4px;
+    top: 60px;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 1;
+    z-index: 2;
+    padding: 0;
+}
+
+.mobileOptions a, .mobileOptions a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 0px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.moreOption:active {
+    background-color: #DDDDDD;
+}
+
+@media only screen and (max-width: 720px) {
+    html {
+        padding-right: 0px;
+    }
+    html, body, body>header, footer, .header {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .header>nav>ul, body>header>nav>ul {
+        visibility: hidden;
+        white-space: nowrap;
+    }
+    .header {
+        height: 60px;
+    }
+    .activities {
+        flex-direction: column;
+    }
+    .findAcitivity {
+        max-height: 400px;
+    }
+    .moreOption {
+        display: flex;
+    }
+}
